@@ -3,7 +3,7 @@ name: Release-plz
 on:
   push:
     branches:
-      - master
+      - release-plz
 
 jobs:
   release-plz-release:
@@ -35,7 +35,7 @@ jobs:
   release-plz-pr:
     name: Release-plz PR
     runs-on: ubuntu-latest
-    if: ${{ github.repository_owner == 'prove-rs' }}
+    if: ${{ github.repository_owner == 'toolCHAINZ' }}
     permissions:
       pull-requests: write
       contents: write
